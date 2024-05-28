@@ -2,14 +2,14 @@
 	"name": "tr_ingest_hospitals_admission_data",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
 				"frequency": "Day",
 				"interval": 1,
-				"startTime": "2024-05-28T18:57:00",
+				"startTime": "2024-05-29T22:10:00",
 				"endTime": "2024-05-30T18:57:00",
 				"timeZone": "E. Africa Standard Time"
 			}
