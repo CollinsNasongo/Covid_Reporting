@@ -1,5 +1,5 @@
 {
-	"name": "dataflow1",
+	"name": "df_cases_and_deaths",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
@@ -79,7 +79,7 @@
 				"          indicator,",
 				"          daily_count,",
 				"          source,",
-				"          each(match(name == 'date'),",
+				"          each(match(name=='date'),",
 				"               'reported_date' = $$)",
 				"     ),",
 				"     skipDuplicateMapInputs: false,",
