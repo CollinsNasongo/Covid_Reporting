@@ -564,7 +564,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"fileName": "github_ecdc_file_list (1).json",
+						"fileName": "ecdc_file_list.json",
 						"container": "configs"
 					}
 				},
@@ -1012,7 +1012,8 @@
 						"interval": 1,
 						"startTime": "2024-05-29T17:10:00",
 						"endTime": "2024-05-30T14:06:00",
-						"timeZone": "E. Africa Standard Time"
+						"timeZone": "E. Africa Standard Time",
+						"schedule": {}
 					}
 				}
 			},
