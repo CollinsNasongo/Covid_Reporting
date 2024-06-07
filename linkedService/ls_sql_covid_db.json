@@ -1,0 +1,18 @@
+{
+	"name": "ls_sql_covid_db",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "covid-nas-sv.database.windows.net",
+			"database": "nasongo-db",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"hostNameInCertificate": "",
+			"authenticationType": "SQL",
+			"userName": "nasongo",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDZFNjUzMjg0LTQ3RjMtNDU0Ri1CQTk5LUQ4OEI4NUI1NzQ4Ql9mMjRlY2I4Zi1jMzQ5LTQ2M2ItODUzZS04NDE2ZjU3NGI4ODgiDQp9"
+		}
+	}
+}
