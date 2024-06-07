@@ -1,11 +1,11 @@
 {
-	"name": "tr_ingest_ecdc_data",
+	"name": "tr_sqlize_hospital_admissions_data",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
 		"pipeline": {
 			"pipelineReference": {
-				"referenceName": "pl_ingest_ecdc_data",
+				"referenceName": "pl_sqlize_hospital_admissions",
 				"type": "PipelineReference"
 			}
 		},
@@ -19,7 +19,15 @@
 			"retryPolicy": {
 				"intervalInSeconds": 30
 			},
-			"dependsOn": []
+			"dependsOn": [
+				{
+					"type": "TumblingWindowTriggerDependencyReference",
+					"referenceTrigger": {
+						"referenceName": "tr_process_hospital_admissions_data",
+						"type": "TriggerReference"
+					}
+				}
+			]
 		}
 	}
 }
