@@ -25,6 +25,9 @@
 					"referenceName": "ls_sql_covid_db",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "sql"
+				},
 				"annotations": [],
 				"type": "AzureSqlTable",
 				"schema": [],
@@ -43,6 +46,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_sql_covid_db",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "sql"
 				},
 				"annotations": [],
 				"type": "AzureSqlTable",
@@ -233,6 +239,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "ingest"
 				},
 				"annotations": []
 			},
@@ -430,6 +439,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "ingest"
+				},
 				"annotations": []
 			},
 			"dependsOn": []
@@ -599,6 +611,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "sqlize"
+				},
 				"annotations": []
 			},
 			"dependsOn": []
@@ -767,6 +782,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "sqlize"
 				},
 				"annotations": []
 			},
@@ -953,6 +971,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "sqlize"
 				},
 				"annotations": []
 			},
@@ -1359,6 +1380,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "process"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -1407,6 +1431,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "process"
 				},
 				"annotations": []
 			},
